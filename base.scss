@@ -136,7 +136,78 @@ margin-left: 23px;
     display: none;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 14430px){
+    header {
+        display: none;
+    }
+    #hd-Mobile {
+        display: block;
+        padding: 32px 0 0px 32px;
+        margin-bottom: 0;
+    }
+    #hd-Mobile img{
+        width: 20%;
+        padding: 0;
+    }
+
+    section {
+        flex-direction: column-reverse;
+        width: 80%;
+        margin: auto;
+    }
+    aside {
+        background-image: url('images/hero-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80%;
+        height: 60%;
+        margin-top: 35px;
+    }
+    article {
+        width: 80%;
+        height: auto;
+        padding: 0;
+        margin-top: 70px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 30px;
+        margin-top: 0px;
+        margin-bottom: 11px;
+        letter-spacing: 12px;
+       
+    }
+    span {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #413a3a;
+        font-size: 30px;
+        letter-spacing: 13px;
+        line-height: 40px;
+    }
+    p {
+        padding: 0 45px;
+        font-size: 12px;
+    }
+    #email {
+        width: 75%;
+        margin: 40px auto;
+    }
+    input {
+        width: 95%;
+       
+    }
+    #error {
+        margin-left: -24px;
+    }
+    #msgEr {
+        margin-top: -31px;
+        margin-left: -82px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
     header {
         display: none;
     }
