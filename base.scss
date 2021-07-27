@@ -1,0 +1,205 @@
+/*cores primarias*/
+$colorDesa: hsl(0, 36%, 70%);
+$colorSolf: hsl(0, 93%, 68%);
+/*cores neutras*/
+$colorDark: hsl(0, 6%, 24%);
+/*gradiente*/
+$gradiente1: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+$gradiente2: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+/*fonte size body*/
+$fontBody: 16px;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: $fontBody;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1 {
+    font-size: 55px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $colorDesa;
+    word-spacing: 15px;
+    letter-spacing: 26px;
+}
+span {
+    font-weight: 600;
+    text-transform: uppercase;
+    color:$colorDark;
+    font-size: 55px;
+    letter-spacing: 26px;
+}
+p{
+    margin-top: 40px;
+    color: $colorDesa;
+    word-spacing: 3px;
+    line-height: 24px;
+}
+#email{
+    height: 55px;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid hsla(0, 36%, 70%, 0.678);
+    margin-top: 50px;
+}
+input {
+    border:none;
+    height: 90%;
+    flex: 2;
+    margin-left: 22px;
+    outline: none;
+    color:$colorDark;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $colorDesa;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    opacity: 0.7; /* Firefox */
+  }
+#bt {
+    height: 100%;
+    width: 100px;
+    border-radius: 100px;
+    background-image: linear-gradient( 135deg,  hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+}
+#bt:hover{
+    background-image: linear-gradient( 135deg,  hsl(0, 80%, 86%),  hsl(0, 100%, 98%));
+    background-image: linear-gradient( 135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
+    box-shadow: 1px 1px 30px $colorDesa;
+    
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1440px;
+    height: 800px;
+}
+aside{ 
+    width: 610px;
+    height: 800px;
+    background-image: url('images/hero-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article {
+    width: 820px;
+    height: 800px;
+    padding: 0 210px 0 150px;
+}
+header img {
+    width: 170px;
+    padding: 50px 0 137px 0;
+}
+#error{
+    display: none;
+}
+#msgEr p {
+margin-top: 13px;
+color: #ce9797;
+word-spacing: 3px;
+line-height: 24px;
+margin-left: 23px;
+}
+#msgEr {
+    display: none;
+}
+#hd-Mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 380px) {
+    header {
+        display: none;
+    }
+    #hd-Mobile {
+        display: block;
+        padding: 32px 0 0px 32px;
+        margin-bottom: -18px;
+    }
+    #hd-Mobile img{
+        width: 100px;
+        padding: 0;
+    }
+
+    section {
+        flex-direction: column-reverse;
+        width: 375px;
+    }
+    aside {
+        background-image: url('images/hero-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 375px;
+        height: 250px;
+    }
+    article {
+        width: 375px;
+        height: auto;
+        padding: 0;
+        margin-top: 70px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 30px;
+        margin-top: 0px;
+        margin-bottom: 11px;
+        letter-spacing: 12px;
+       
+    }
+    span {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #413a3a;
+        font-size: 30px;
+        letter-spacing: 13px;
+        line-height: 40px;
+    }
+    p {
+        padding: 0 45px;
+        font-size: 12px;
+    }
+    #email {
+        width: 75%;
+        margin: 40px auto;
+    }
+    input {
+        width: 175px;
+       
+    }
+    #error {
+        margin-left: -24px;
+    }
+    #msgEr {
+        margin-top: -31px;
+        margin-left: -82px;
+    }
+}
